@@ -19,13 +19,42 @@ namespace ExceptionFilter.API.Controllers
         {
             var zero = 0;
             var result = 1 / zero;
-            return new string[] { "If you got this message, take care, the world we know is about to explode. Your result: " + result };
+            return new string[] { "If you got this message, take care, the world we know is about to come to a end. Your result: " + result };
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        
+        [HttpGet("GetIoException")]
+        public string GetIoException()
         {
+            OuterLib.Io.IoException();
+            return "value";
+        }
+
+        [HttpGet("GetImageException")]
+        public string GetImageException()
+        {
+            OuterLib.Image.BadImageFormatException();
+            return "value";
+        }
+
+        [HttpGet("GetArgumentOutOfRange")]
+        public string GetArgumentOutOfRange()
+        {
+            OuterLib.Argument.ArgumentOutOfRangeException();
+            return "value";
+        }
+
+        [HttpGet("GetArgumentEx")]
+        public string GetArgumentEx()
+        {
+            OuterLib.Argument.ArgumentEx();
+            return "value";
+        }
+
+        [HttpGet("GetArgumentNullException")]
+        public string GetArgumentNullException()
+        {
+            OuterLib.Argument.ArgumentNullException();
             return "value";
         }
 

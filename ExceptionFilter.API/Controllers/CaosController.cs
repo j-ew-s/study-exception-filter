@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using ExceptionFilter.API.Filter;
 using Microsoft.AspNetCore.Mvc;
@@ -56,6 +57,13 @@ namespace ExceptionFilter.API.Controllers
         {
             OuterLib.Argument.ArgumentNullException();
             return "value";
+        }
+
+        [HttpGet("GetHttpRequestException")]
+        public void GetHttpRequestException()
+        {
+            throw new HttpRequestException();
+ 
         }
 
         // POST api/values

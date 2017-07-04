@@ -19,7 +19,7 @@ namespace ExceptionFilter.API.Controllers
         {
             var zero = 0;
             var result = 1 / zero;
-            return new string[] { "If you got this message, take care, the world we know is about to come to a end. Your result: " + result };
+            return new string[] { "If you got this message, the world once we know is gone. keeping our humanity? That's a choice. Your result: " + result };
         }
 
         

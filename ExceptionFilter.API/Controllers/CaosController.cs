@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ExceptionFilter.API.Controllers
 {
     [Route("api/[controller]")]
-    [ErrorHandlingFilter]
+    [ExceptionHandlingFilter]
     public class CaosController : Controller
     {
         // GET: api/values

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ExceptionFilter.API.Filter
 {
-    public class ErrorHandlingFilter : ExceptionFilterAttribute
+    public class ExceptionHandlingFilter : ExceptionFilterAttribute
     {
         public override void OnException(ExceptionContext context)
         {

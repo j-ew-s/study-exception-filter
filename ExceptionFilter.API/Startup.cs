@@ -43,7 +43,7 @@ namespace ExceptionFilter.API
             services.AddMvc(options =>
             {
                 options.Filters.Add(new ProducesAttribute("application/json; charset=utf-8"));
-                options.Filters.Add(new ErrorHandlingFilter());
+                options.Filters.Add(new ExceptionHandlingFilter());
             });
         }
 

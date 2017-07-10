@@ -39,11 +39,11 @@ namespace ExceptionFilter.API
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
-
             services.AddMvc(options =>
             {
                 options.Filters.Add(new ProducesAttribute("application/json; charset=utf-8"));
-                options.Filters.Add(new ExceptionHandlingFilter());
+                //uncoment the line bellow to allow the filter to handle every exception.
+               // options.Filters.Add(new ExceptionHandlingFilter());
             });
         }
 

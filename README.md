@@ -12,10 +12,11 @@ Override the ActionResult and crete response object
 Decorate the controller with [ExceptionHandlingFilter] and every exception will be haldled by ExceptionHandlingFilter class
 
 #### API/Startup
-Configured the exception for the app
- services.AddMvc(options =>{
+Configured the app to handle all the exceptions to use your customized filter.
+services.AddMvc(options =>{
                 options.Filters.Add(new ExceptionHandlingFilter());
             });
+Not setting this to service.Add.MVC, you will need to add a decorator over all the Controllers or Actions you whant to be handled by your filter, as you can see in the CaosController.cs file.
 
 #### OuterLib
 Collection of some Exceptions.

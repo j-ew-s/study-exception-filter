@@ -10,17 +10,17 @@ This study covers:
 
 
 #### API/Filter/ExceptionHandlingFilter
-Will handle every exception thrown by classes decorated with [ExceptionHandlingFilter]
+Will handle every exception thrown by classes decorated with ```[ExceptionHandlingFilter]```
 Call the ApiResponse and perform client response.
 
 #### API/Response/ApiResponse
-Override the ActionResult and crete response object
+Override the ```ActionResult``` and crete response object
 
 #### API/Controller/CaosController
-Decorate the controller class with [ExceptionHandlingFilter] and every exception will be haldled by ExceptionHandlingFilter class.
+Decorate the controller class with ```[ExceptionHandlingFilter]``` and every exception will be haldled by ExceptionHandlingFilter class.
 
 #### API/Controller/SpecificTreatedController
-WithTreatment action is configured to use the exception custom filter, by adding the decorator [ExceptionHandlingFilter]
+WithTreatment action is configured to use the exception custom filter, by adding the decorator ```[ExceptionHandlingFilter]```
 NoTreatment action dont use the exception custon filter so it throws a 500 without any information to the client.
 
 

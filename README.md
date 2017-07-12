@@ -20,7 +20,7 @@ Override the ActionResult and crete response object
 Decorate the controller class with [ExceptionHandlingFilter] and every exception will be haldled by ExceptionHandlingFilter class.
 
 #### API/Controller/SpecificTreatedController
-WithTreatment action configured to use the exception custom filter, by adding the decorator [ExceptionHandlingFilter]
+WithTreatment action is configured to use the exception custom filter, by adding the decorator [ExceptionHandlingFilter]
 NoTreatment action dont use the exception custon filter so it throws a 500 without any information to the client.
 
 

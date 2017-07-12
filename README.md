@@ -13,6 +13,8 @@ This study covers:
 Will handle every exception thrown by classes decorated with ```[ExceptionHandlingFilter]```
 Call the ApiResponse and perform client response.
 
+At this point, you can call a Log Method - this is byond  the scope of this study.
+
 #### API/Response/ApiResponse
 Override the ```ActionResult``` and crete response object
 

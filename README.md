@@ -5,8 +5,8 @@ This study covers:
 + Creating a custon filter to handle any exception throed by the App.
 + Creating a generic Class Object response - overriding the ActionResult
 + Setting the Startup.cs 
-+ Configuring controllers to set all it's actions to be handled by the Exception Handler Filter
-+ Configuring specific actions to use Exception Handler Filter
++ Configuring API controller to set all it's actions to be handled by the Exception Handler Filter
++ Configuring specific API controller's action to use Exception Handler Filter
 
 
 #### API/Filter/ExceptionHandlingFilter

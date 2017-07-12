@@ -26,10 +26,12 @@ NoTreatment action dont use the exception custon filter so it throws a 500 witho
 
 #### API/Startup
 Configured the app to handle all the exceptions to use your customized filter.
+```cs
 services.AddMvc(options =>{
                 options.Filters.Add(new ExceptionHandlingFilter());
             });
-Not setting this to service.Add.MVC, you will need to add a decorator over all the Controllers or Actions you whant to be handled by your filter, as you can see in the CaosController.cs file.
+```
+Not setting this to ```service.Add.MVC```, you will need to add a decorator over all the Controllers or Actions you whant to be handled by your filter, as you can see in the CaosController.cs file.
 
 #### OuterLib
 Collection of some Exceptions.

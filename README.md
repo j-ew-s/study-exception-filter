@@ -21,7 +21,7 @@ Decorate the controller class with ```[ExceptionHandlingFilter]``` and every exc
 
 #### API/Controller/SpecificTreatedController
 WithTreatment action is configured to use the exception custom filter, by adding the decorator ```[ExceptionHandlingFilter]```
-NoTreatment action dont use the exception custon filter so it throws a 500 without any information to the client.
+NoTreatment action doesn't use the exception custon filter so it throws a 500 http status code to the client.
 
 
 #### API/Startup

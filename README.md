@@ -38,3 +38,11 @@ Not setting this to ```service.Add.MVC```, you will need to add a decorator over
 #### OuterLib
 Collection of some Exceptions.
 
+##### Conclusion
+
+Configuring a exception filter will help you handling exceptions in a singular way.
+This way you will avoid creating Tries and Catches all over the project.
+
+You can configure the exception filter to be applied for your project using the Services.AddMvc where no other configuration will be needing or you can do it for a specific Controller or even an Action, just adding the filter as decorator.
+
+Adding it to a specific controller or action will keep you with the possibility to treat other controllers or actions in a different way.

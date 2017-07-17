@@ -8,6 +8,10 @@ This study covers:
 + Configuring API controller to set all it's actions to be handled by the Exception Handler Filter
 + Configuring specific API controller's action to use Exception Handler Filter
 
+DotNet Framwwork version:
++ DotNetCore
+
+
 
 #### API/Filter/ExceptionHandlingFilter
 Will handle every exception thrown by classes decorated with ```[ExceptionHandlingFilter]```
